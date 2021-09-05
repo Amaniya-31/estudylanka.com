@@ -87,17 +87,15 @@ function Ads2() {
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                    <Card className="polaroid" style={{ backgroundColor: '#F7D59C', visibility: 'hidden' }}>
+                    <Card className="polaroid" style={{ backgroundColor: '#CEE5D0' }}>
                         {/* <Card.Img variant="top" src={Photo} width="250" height="250" className="card-align" style={{ borderRadius: "50%" }} /> */}
                         <Card.Body className="card-align">
-                            <Card.Title className="crdTitle" style={{ color: '#B61919' }}>MATHEMATICS</Card.Title>
+                            <Card.Title className="crdTitle" style={{ color: '#30475E' }}>SPOKEN ENGLISH FOR ADULTS</Card.Title>
                             <Card.Text className="crdTxt">
-                                <p><strong>TEACHER :</strong> MOHAMED HUSSAIN</p>
-                                <p><strong>YEARS OF EXPERIENCE :</strong> 25 YEARS</p>
-                                <p><strong>CONTACT NUMBER :</strong> +94 779209244</p>
-                                <p><strong>WHATSAPP :</strong> +94 779209244</p>
-                                <p><strong>SYLLABUS :</strong> EDEXCEL AND CAMBRIDGE</p>
-                                <p><strong>GRADE :</strong> GRADE 09, GRADE 10, GRADE 11, GRADE 12, GRADE 13</p>
+                                <p><strong>TEACHER :</strong> IMTHIYAS THASLIM</p>
+                                <p><strong>YEARS OF EXPERIENCE :</strong> 23 YEARS</p>
+                                <p><strong>CONTACT NUMBER :</strong> +94 774542901</p>
+                                <p><strong>WHATSAPP :</strong> +94 774542901</p>
                                 <p><strong>MEDIUM :</strong> ENGLISH</p>
                             </Card.Text>
                         </Card.Body>
