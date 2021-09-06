@@ -153,7 +153,7 @@ function Ads() {
                                     <p><strong>MEDIUM :</strong> ENGLISH</p>
                                 </Card.Text>
                             </Card.Body>
-                        </Card>                                              
+                        </Card>
                     </CardGroup>
                 </Container>
             </div>

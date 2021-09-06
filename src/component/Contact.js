@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import Logo from '../logo.png';
+import ConInfo from './ConInfo';
 
 function Contact(e) {
 
@@ -21,6 +22,8 @@ function Contact(e) {
 
     return (
         <div id="contact">
+            <ConInfo />
+
             <Container>
                 <Navbar collapseOnSelect expand="lg">
                     <Link to="/"><Navbar.Brand className="brand brandTxt">

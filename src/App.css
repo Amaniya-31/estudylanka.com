@@ -154,7 +154,7 @@ body {
   background-color: #FFFFFF !important;
   box-shadow: 2px 4px 8px 02px rgba(0, 0, 0, 0.2), 2px 6px 20px 2px rgba(0, 0, 0, 0.19);
   margin-bottom: 20px;
-  padding: 20px 50px 35px 50px;
+  padding: 15px 50px 35px 50px;
   top: 0;
 }
 
@@ -274,4 +274,17 @@ body {
 
 .uniLinkCon {
   margin-bottom: 50px !important;
+}
+
+.socialBg {
+  background-color: #000000;
+}
+
+.link {
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 5px 10px 0 5px;
+  font-weight: 500px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
 }
