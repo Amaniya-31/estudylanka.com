@@ -12,13 +12,13 @@ function ConInfo() {
     return (
         <div>
             <div className="socialBg">
-                <Navbar collapseOnSelect expand="md" variant="dark">
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar collapseOnSelect expand="md">
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className="menu-bar" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ml-auto link">
                             <p className="link">{email} Email: estudylanka @gmail.com </p>
                             <p className="link">{whatsapp} WhatsApp: +94 769407802 </p>
-                            <p className="link"><a href="https://www.facebook.com/profile.php?id=100072647971306" className="link">{fb}</a>Facebook : EStudyLanka</p>
+                            <p className="link"><a href="https://www.facebook.com/profile.php?id=100072647971306" className="link">{fb} Facebook : EStudyLanka</a></p>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
