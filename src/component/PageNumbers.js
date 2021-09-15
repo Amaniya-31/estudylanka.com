@@ -8,6 +8,7 @@ import { Pagination } from 'react-bootstrap';
                 <Pagination>
                     <Pagination.Item href="/#page1" >{1}</Pagination.Item>
                     <Pagination.Item href="/page2" >{2}</Pagination.Item>
+                    <Pagination.Item href="/page3" >{3}</Pagination.Item>
                 </Pagination>
             </div>
         </div>

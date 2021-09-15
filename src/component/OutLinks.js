@@ -7,7 +7,7 @@ import National from '../nie.png';
 function OutLinks() {
     return (
         <div>
-            <div className="uniLink">
+            <div>
                 <Row>
                     <Col>
                         <a href="https://www.cambridgeinternational.org/" >
@@ -38,7 +38,7 @@ function OutLinks() {
                                 src={National}
                                 width="300"
                                 height="120"
-                                className="d-inline-block align-top brand-img outlink nie"
+                                className="d-inline-block align-top brand-img outlink nie"                                
                             />
                         </a>
                     </Col>

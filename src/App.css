@@ -105,8 +105,7 @@
     border: solid;
     border-width: 2px !important;
     border-color: #000000 !important;
-  }
-
+  }  
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -172,7 +171,7 @@ body {
 
 .intro {
   font-family: 'Balsamiq Sans', cursive;
-  font-size: 20px;
+  font-size: 32px;
   text-align: start;
   margin-top: 25px;
 }
@@ -200,6 +199,7 @@ body {
   line-height: normal !important;
   font-weight: 500 !important;
   font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 0.5px !important;
 }
 
 .crdTitle {
@@ -280,6 +280,7 @@ body {
 .uniLink {
   background-color: #f7f7f7 !important;
   padding: 20px;
+  margin-bottom: 50px !important;
 }
 
 .uniLinkCon {
@@ -313,12 +314,36 @@ body {
   border: solid;
   border-width: 2px !important;
   border-color: #000000 !important;
+  width: 290px;
+  height: 50px;  
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 17px !important;
+  margin-bottom: 15px !important;
 }
 
 .schlBg {
-  background-color: #FFFFFF !important;
+  background-color: #ffffffd8 !important;
   padding: 70px 100px 50px 100px;
   text-align: justify;
   font-family: 'Balsamiq Sans', cursive;
   border-radius: 0.5rem;
+  text-align: center;
+}
+
+.schlLnk {
+  color: #000000 !important;
+  text-decoration: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 20px !important;
+}
+
+.schlLnk:hover {
+  color: #014ec2 !important;
+  text-decoration: none;
+}
+
+.nie {
+  margin-top: 30px;
 }

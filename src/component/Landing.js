@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../logo.png';
 import { Row, Col, Button, Container } from 'react-bootstrap';
 import ConInfo from './ConInfo';
+import OutLinks from './OutLinks';
 
 function Landing() {
     return (
@@ -24,21 +25,15 @@ function Landing() {
                             </Link>
                             <Link className="brand" to="/">eStudyLanka</Link>
                             <div>
-                                <p className="intro">
-                                    Seeking teachers offering online tutoring?
-                                    Or want to advertise your tuition service?
-                                    eStudyLanka is an online platform for parents and students to contact teachers,
-                                    who have advertised their services.
-                                </p>
+                                <p className="intro">"Striving to be a guide for school children and teachers."</p>
                                 <Link to="/contact"><Button variant="dark" size="lg" className="adBtn">CLICK HERE TO POST YOUR AD</Button></Link>
                             </div>
                         </Col>
                         <Col>
-                            <Link to="/schools"><Button variant="warning" size="lg" className="adBtn linkBtn" style={{ float: 'right' }}>BROWSE SRI LANKAN SCHOOLS</Button></Link>
-                            <Link to="/universities"><Button variant="warning" size="lg" className="adBtn linkBtn" style={{ float: 'right' }}>BROWSE SRI LANKAN UNIVERSITIES</Button></Link>
+                            <OutLinks />
                         </Col>
                     </Row>
-                </Container>
+                </Container>             
             </div>
         </div>
     )
