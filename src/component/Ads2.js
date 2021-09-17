@@ -142,12 +142,12 @@ function Ads2() {
                         <Card.Body className="card-align">
                             <Card.Title className="crdTitle" style={{ color: '#6F4C5B' }}>MATHEMATICS</Card.Title>
                             <Card.Text className="crdTxt">
-                                <p><strong>TEACHER :</strong> MOHAMED HUSSAIN</p>
-                                <p><strong>YEARS OF EXPERIENCE :</strong> 25 YEARS</p>
-                                <p><strong>CONTACT NUMBER :</strong> +94 779209244</p>
-                                <p><strong>WHATSAPP :</strong> +94 779209244</p>
-                                <p><strong>SYLLABUS :</strong> EDEXCEL AND CAMBRIDGE</p>
-                                <p><strong>GRADE :</strong> GRADE 09, GRADE 10, GRADE 11, GRADE 12, GRADE 13</p>
+                                <p><strong>TEACHER :</strong> MOHAMED SUJAIN</p>
+                                <p><strong>YEARS OF EXPERIENCE :</strong> 31 YEARS</p>
+                                <p><strong>CONTACT NUMBER :</strong> +966 500443648</p>
+                                <p><strong>WHATSAPP :</strong> +966 500443648</p>
+                                <p><strong>SYLLABUS :</strong> EDEXCEL</p>
+                                <p><strong>GRADE :</strong> GRADE 09, GRADE 10, GRADE 11</p>
                                 <p><strong>MEDIUM :</strong> ENGLISH</p>
                             </Card.Text>
                         </Card.Body>
@@ -157,16 +157,16 @@ function Ads2() {
                         <Card.Body className="card-align">
                             <Card.Title className="crdTitle" style={{ color: '#5F7A61' }}>MATHEMATICS</Card.Title>
                             <Card.Text className="crdTxt">
-                                <p><strong>TEACHER :</strong> S MAYUIRAN</p>
-                                <p><strong>YEARS OF EXPERIENCE :</strong> 20 YEARS</p>
-                                <p><strong>CONTACT NUMBER :</strong> +94 719649644</p>
-                                <p><strong>WHATSAPP :</strong> +94 719649644</p>
+                                <p><strong>TEACHER :</strong> MOHAMED HUSSAIN</p>
+                                <p><strong>YEARS OF EXPERIENCE :</strong> 25 YEARS</p>
+                                <p><strong>CONTACT NUMBER :</strong> +94 779209244</p>
+                                <p><strong>WHATSAPP :</strong> +94 779209244</p>
                                 <p><strong>SYLLABUS :</strong> EDEXCEL AND CAMBRIDGE</p>
-                                <p><strong>GRADE :</strong> GRADE 09, GRADE 10, GRADE 11, GRADE 12</p>
+                                <p><strong>GRADE :</strong> GRADE 09, GRADE 10, GRADE 11, GRADE 12, GRADE 13</p>
                                 <p><strong>MEDIUM :</strong> ENGLISH</p>
                             </Card.Text>
                         </Card.Body>
-                    </Card>
+                    </Card>                    
                 </CardGroup>
             </Container>
 
