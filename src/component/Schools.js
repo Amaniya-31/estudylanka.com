@@ -2,14 +2,11 @@ import React from 'react';
 import { Navbar, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Logo from '../logo.png';
-import ConInfo from './ConInfo';
 import Footer from './Footer';
 
 function Schools() {
     return (
         <div id="schools">
-            <ConInfo />
-
             <Container>
                 <Navbar collapseOnSelect expand="lg">
                     <Link to="/"><Navbar.Brand className="brand brandTxt">

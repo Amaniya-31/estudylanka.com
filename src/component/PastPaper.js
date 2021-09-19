@@ -4,15 +4,12 @@ import { Link } from 'react-router-dom';
 import Logo from '../logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
-import ConInfo from './ConInfo';
 
 const exc = <FontAwesomeIcon icon={faExclamationCircle} />
 
 function PastPaper() {
     return (
-        <div>
-            <ConInfo />
-            
+        <div>            
             <Container>
                 <Navbar collapseOnSelect expand="lg">
                     <Link to="/"><Navbar.Brand className="brand brandTxt">

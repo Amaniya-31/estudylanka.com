@@ -8,16 +8,18 @@ import Ads3 from './component/Ads3';
 import Schools from './component/Schools';
 import Uni from './component/Universities';
 import PastPprs from './component/PastPaper';
+import Home from './component/Landing';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path="/" component={Ads} />
+          <Route exact path="/" component={Home} />
+          <Route path="/tutors/page1" component={Ads} />
           <Route path="/contact" component={Contact} />
-          <Route path="/page2" component={Ads2} />
-          <Route path="/page3" component={Ads3} />
+          <Route path="/tutors/page2" component={Ads2} />
+          <Route path="/tutors/page3" component={Ads3} />
           <Route path="/internaional-schools" component={Schools} />
           <Route path="/universities" component={Uni} />
           <Route path="/past-papers" component={PastPprs} />

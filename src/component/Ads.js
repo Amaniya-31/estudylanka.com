@@ -1,16 +1,27 @@
 import React from 'react';
-import { Container, Card, CardGroup } from 'react-bootstrap';
+import { Container, Card, CardGroup, Navbar } from 'react-bootstrap';
 import Footer from './Footer';
-import Landing from './Landing';
 import PageNumbers from './PageNumbers';
-import TabBtns from './TabBtns';
+import { Link } from 'react-router-dom';
+import Logo from '../logo.png';
 
 function Ads() {
     return (
         <div>
-            <Landing />
-
-            <TabBtns />
+            <Container>
+                <Navbar collapseOnSelect expand="lg">
+                    <Link to="/"><Navbar.Brand className="brand brandTxt">
+                        <img
+                            alt=""
+                            src={Logo}
+                            width="100"
+                            height="100"
+                            className="d-inline-block align-top brand-img"
+                        />
+                        eStudyLanka
+                    </Navbar.Brand></Link>
+                </Navbar>
+            </Container>
 
             <div id="page1">
                 <Container style={{ alignContent: 'center' }}>
@@ -144,16 +155,16 @@ function Ads() {
                             <Card.Body className="card-align">
                                 <Card.Title className="crdTitle" style={{ color: '#5F7A61' }}>ENGLISH</Card.Title>
                                 <Card.Text className="crdTxt">
-                                <p><strong>TEACHER :</strong> Mrs F S MOHIDEEN</p>
-                                <p><strong>YEARS OF EXPERIENCE :</strong> 06 YEARS</p>
-                                <p><strong>CONTACT NUMBER :</strong> +94 771391864</p>
-                                <p><strong>WHATSAPP :</strong> +94 771391864</p>
-                                <p><strong>SYLLABUS :</strong> EDEXCEL AND CAMBRIDGE</p>
-                                <p><strong>GRADE :</strong> GRADE 02</p>
-                                <p><strong>MEDIUM :</strong> ENGLISH</p>
-                            </Card.Text>
+                                    <p><strong>TEACHER :</strong> Mrs F S MOHIDEEN</p>
+                                    <p><strong>YEARS OF EXPERIENCE :</strong> 06 YEARS</p>
+                                    <p><strong>CONTACT NUMBER :</strong> +94 771391864</p>
+                                    <p><strong>WHATSAPP :</strong> +94 771391864</p>
+                                    <p><strong>SYLLABUS :</strong> EDEXCEL AND CAMBRIDGE</p>
+                                    <p><strong>GRADE :</strong> GRADE 02</p>
+                                    <p><strong>MEDIUM :</strong> ENGLISH</p>
+                                </Card.Text>
                             </Card.Body>
-                        </Card>                                              
+                        </Card>
                     </CardGroup>
                 </Container>
             </div>

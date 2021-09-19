@@ -4,13 +4,10 @@ import Footer from './Footer';
 import PageNumbers from './PageNumbers';
 import { Link } from 'react-router-dom';
 import Logo from '../logo.png';
-import ConInfo from './ConInfo';
 
 function Ads2() {
     return (
         <div id="page2">
-            <ConInfo />
-
             <Container>
                 <Navbar collapseOnSelect expand="lg">
                     <Link to="/"><Navbar.Brand className="brand brandTxt">
