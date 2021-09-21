@@ -12,9 +12,9 @@ function PastPaper() {
         <div>            
             <Container>
                 <Navbar collapseOnSelect expand="lg">
-                    <Link to="/"><Navbar.Brand className="brand brandTxt">
+                    <Link to="/" title="estudylanka"><Navbar.Brand className="brand brandTxt">
                         <img
-                            alt=""
+                            alt="logo"
                             src={Logo}
                             width="100"
                             height="100"
@@ -26,7 +26,7 @@ function PastPaper() {
             </Container>
 
             <Container fluid>
-                <div className="schlBg">
+                <div className="schlBg" title="pastpapers">
                     <h1> {exc} Under development</h1>
                 </div>
             </Container>

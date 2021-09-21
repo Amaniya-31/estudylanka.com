@@ -9,9 +9,9 @@ function Schools() {
         <div id="schools">
             <Container>
                 <Navbar collapseOnSelect expand="lg">
-                    <Link to="/"><Navbar.Brand className="brand brandTxt">
+                    <Link to="/" title="estudylanka"><Navbar.Brand className="brand brandTxt">
                         <img
-                            alt=""
+                            alt="logo"
                             src={Logo}
                             width="100"
                             height="100"
@@ -25,7 +25,7 @@ function Schools() {
             <br />
 
             <Container fluid>
-                <div className="schlBg">
+                <div className="schlBg" title="international schools srilanka">
                     <p><a href="https://amaledu.lk/" className="schlLnk">Amal International School</a></p>
                     <p><a href="https://www.facebook.com/almanarintern/" className="schlLnk">Al-Manar International School</a></p>
                     <p><a href="https://www.ais.lk/" className="schlLnk">Asian International School</a></p>

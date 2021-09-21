@@ -10,9 +10,9 @@ function OutLinks() {
             <div>
                 <Row>
                     <Col>
-                        <a href="https://www.cambridgeinternational.org/" >
+                        <a href="https://www.cambridgeinternational.org/"  title="cambridge">
                             <img
-                                alt=""
+                                alt="Cambridge logo"
                                 src={Cambridge}
                                 width="300"
                                 height="120"
@@ -21,9 +21,9 @@ function OutLinks() {
                         </a>
                     </Col>
                     <Col>
-                        <a href="https://qualifications.pearson.com/en/home.html" >
+                        <a href="https://qualifications.pearson.com/en/home.html" title="edexcel">
                             <img
-                                alt=""
+                                alt="Edecxel logo"
                                 src={Edexcel}
                                 width="300"
                                 height="120"
@@ -32,9 +32,9 @@ function OutLinks() {
                         </a>
                     </Col>
                     <Col>
-                        <a href="https://nie.lk/" >
+                        <a href="https://nie.lk/" title="nie">
                             <img
-                                alt=""
+                                alt="nie logo"
                                 src={National}
                                 width="300"
                                 height="120"

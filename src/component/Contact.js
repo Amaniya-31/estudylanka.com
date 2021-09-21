@@ -23,9 +23,9 @@ function Contact(e) {
         <div id="contact">
             <Container>
                 <Navbar collapseOnSelect expand="lg">
-                    <Link to="/"><Navbar.Brand className="brand brandTxt">
+                    <Link to="/" title="estudylanka"><Navbar.Brand className="brand brandTxt">
                         <img
-                            alt=""
+                            alt="logo"
                             src={Logo}
                             width="100"
                             height="100"

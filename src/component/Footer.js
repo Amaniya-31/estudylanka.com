@@ -13,11 +13,11 @@ function Footer() {
     return (
         <div>
             <div className="ftrBg">
-                <p className="ftrPs">{email} Email : estudylanka@gmail.com </p>
-                <p className="ftrPs">{whatsapp} WhatsApp : +94 769407802 </p>
-                <p className="ftrPs">{fb} Facebook : EStudyLanka </p>
+                <p className="ftrPs" title="estudylanka">{email} Email : estudylanka@gmail.com </p>
+                <p className="ftrPs" title="estudylanka">{whatsapp} WhatsApp : +94 769407802 </p>
+                <p className="ftrPs" title="estudylanka">{fb} Facebook : EStudyLanka </p>
                 <hr className="divdi"></hr>
-                <p className="ftrP">{copy} Copyright 2021 - F. Amaniya</p>
+                <p className="ftrP" title="F. Amaniya">{copy} Copyright 2021 - F. Amaniya</p>
             </div>
         </div>
     )

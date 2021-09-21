@@ -9,9 +9,9 @@ function Universities() {
         <div id="universities">
             <Container>
                 <Navbar collapseOnSelect expand="lg">
-                    <Link to="/"><Navbar.Brand className="brand brandTxt">
+                    <Link to="/" title="estudylanka"><Navbar.Brand className="brand brandTxt">
                         <img
-                            alt=""
+                            alt="logo"
                             src={Logo}
                             width="100"
                             height="100"
@@ -25,7 +25,7 @@ function Universities() {
             <br />
 
             <Container fluid>
-                <div className="schlBg">
+                <div className="schlBg" title="universities srilanka">
                     <p><a href="https://www.apiit.lk/" className="schlLnk">Asia Pacific Institute Of Information Technology (APIIT)</a></p>
                     <p><a href="https://atikegalle.com/" className="schlLnk">ATI Kegalle</a></p>
                     <p><a href="https://www.acbt.net/" className="schlLnk">Australian College of Business and Technology (ACBT)</a></p>
