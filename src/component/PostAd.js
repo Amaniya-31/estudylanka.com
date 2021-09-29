@@ -5,7 +5,7 @@ import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import Logo from '../logo.png';
 
-function Contact(e) {
+function PostAd(e) {
 
     function sendEmail(e) {
         e.preventDefault();
@@ -331,4 +331,4 @@ function Contact(e) {
     )
 }
 
-export default Contact;
+export default PostAd;
