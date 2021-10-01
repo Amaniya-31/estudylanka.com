@@ -1,9 +1,6 @@
 import React from 'react';
-import { Navbar, Form, Button, Container, Row, Col } from 'react-bootstrap';
+import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
-import Footer from './Footer';
-import { Link } from 'react-router-dom';
-import Logo from '../logo.png';
 
 function PostAd(e) {
 
@@ -12,6 +9,7 @@ function PostAd(e) {
 
         emailjs.sendForm('service_8fdml82', 'template_f6kgunq', e.target, 'user_O36l6NDGBRWGo4WGjPSmS')
             .then((result) => {
+                alert("Ad has been successfully submitted. Your Ad will be posted within the next 48 hours.")
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
@@ -21,23 +19,8 @@ function PostAd(e) {
 
     return (
         <div id="contact">
-            <Container>
-                <Navbar collapseOnSelect expand="lg">
-                    <Link to="/" title="estudylanka"><Navbar.Brand className="brand brandTxt">
-                        <img
-                            alt="logo"
-                            src={Logo}
-                            width="100"
-                            height="100"
-                            className="d-inline-block align-top brand-img"
-                        />
-                        eStudyLanka
-                    </Navbar.Brand></Link>
-                </Navbar>
-            </Container>
-
             <Form className="frmBg" onSubmit={sendEmail}>
-                <h3 style={{ fontWeight: '900', paddingBottom: '10px' }}>Submit your details to place your Ad here</h3>
+                <h3 className="postAdTitle">Submit your details to place your Ad here</h3>
                 <h6 style={{ paddingBottom: '50px' }}>Please submit one subject at a time. You may post multiple Ads.</h6>
                 <Row>
                     <Col>
@@ -89,7 +72,7 @@ function PostAd(e) {
                                             style={{ display: 'inline-block', padding: '2px 20px 2px 20px', fontWeight: '400' }}
                                             name="cambridge"
                                         />
-                                        <Container>
+                                        <Container fluid>
                                             <Form.Label className="frmTxtCon" style={{ fontSize: '14px' }}>Select Grade</Form.Label>
                                             {['radio'].map((type) => (
                                                 <div key={`default-${type}`} className="mb-3">
@@ -189,7 +172,7 @@ function PostAd(e) {
                                             style={{ display: 'inline-block', padding: '2px 20px 2px 20px', fontWeight: '400' }}
                                             name="national"
                                         />
-                                        <Container>
+                                        <Container fluid>
                                             <Form.Label className="frmTxtCon" style={{ fontSize: '14px' }}>Select Grade</Form.Label>
                                             {['radio'].map((type) => (
                                                 <div key={`default-${type}`} className="mb-3">
@@ -287,7 +270,7 @@ function PostAd(e) {
                                                 </div>
                                             ))}
                                         </Container>
-                                        <Container>
+                                        <Container fluid>
                                             <Form.Label className="frmTxtCon" style={{ fontSize: '14px' }}>Select Medium</Form.Label>
                                             {['radio'].map((type) => (
                                                 <div key={`default-${type}`} className="mb-3">
@@ -325,8 +308,6 @@ function PostAd(e) {
                     Submit
                 </Button>
             </Form>
-
-            <Footer />
         </div>
     )
 }

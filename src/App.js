@@ -9,14 +9,16 @@ import Schools from './component/Schools';
 import Uni from './component/Universities';
 import PastPprs from './component/PastPaper';
 import Home from './component/Landing';
-import Contact from './component/ContactUs';
 import Student from './component/StudentForum';
 import About from './component/About';
+import Header from './component/Header';
+import Footer from './component/Footer';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Header />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/tutors" component={Ads} />
@@ -26,10 +28,10 @@ function App() {
           <Route path="/internaional-schools" component={Schools} />
           <Route path="/universities" component={Uni} />
           <Route path="/past-papers" component={PastPprs} />
-          <Route path="/contact-us" component={Contact} />
           <Route path="/student-forum" component={Student} />
           <Route path="/about" component={About} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

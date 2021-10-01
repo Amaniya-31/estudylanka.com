@@ -302,7 +302,7 @@ h2{
   font-size: 44px;  
 }
 
-h3{
+.pageSubtxt {
   color: whitesmoke;
   text-shadow: 2px 2px #000000;
   text-align: center;
@@ -314,9 +314,9 @@ h3{
 
 .btn2{
   margin-top: 30px;
-  background: transparent;
+  background: #448196;
   border: 1.5px solid whitesmoke;
-  color:#f5f5f5;
+  color:#ffffff;
   border-radius: 20px;
   padding: 10px 25px;
   outline: none;
@@ -326,8 +326,8 @@ h3{
 
 .btn2:hover{
   margin-top: 30px;
-  background: #add8e6;
-  border: 1.5px solid whitesmoke;
+  background: #4b879b;
+  border: 1.5px solid #f5f5f5;
   color:#000000;
   border-radius: 20px;
   padding: 10px 25px;
@@ -340,6 +340,7 @@ h3{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap:10px;
+  margin-bottom: 100px !important;
 }
 
 .about {
@@ -348,7 +349,7 @@ h3{
   background-position:center;
   position:relative;
   overflow:hidden;
-  background-image: url('a.jpg');    
+  background-image: url('a.jpg');   
 }
 
 .box{
@@ -379,6 +380,18 @@ h3{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 35px; 
   color: #474141;
+}
+
+.ads {
+  margin-top: 100px !important;
+}
+
+.postAdTitle {
+  font-weight: 900;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-bottom: 10px !important;
+  color: #000000;
+  text-shadow: none;
 }
 
 /* Navbar */
@@ -448,9 +461,9 @@ h3{
 
 .ftrBg {
   background-color: #ffffff !important;
-  margin-top: 50px !important;
+  margin-top: 10px !important;
   padding: 20px !important;
-  box-shadow: 2px 4px 8px 02px rgba(0, 0, 0, 0.2), 2px 6px 20px 2px rgba(0, 0, 0, 0.19);
+  box-shadow: 2px 4px 8px 02px #00000033, 2px 6px 20px 2px #00000030;
 }
 
 .ftrP {
@@ -470,9 +483,8 @@ h3{
 
 .frmBg {
   background-color: #f3f0f0 !important;
-  margin: 100px;
+  margin: 20px;
   padding: 50px;
-  border-radius: 0.5rem;
   overflow: hidden;
 }
 
@@ -566,9 +578,13 @@ h3{
   background-color: #ffffffd8 !important;
   padding: 70px 100px 50px 100px;
   text-align: justify;
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 0.5rem;
-  text-align: center;
+}
+
+.schlDp {
+  font-family: 'Balsamiq Sans', cursive !important;
+  letter-spacing: 0.2px;
 }
 
 .schlLnk {
@@ -593,7 +609,7 @@ h3{
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 500;
   text-align: center;
-  position: fixed;
+  position: sticky;
   z-index: 1;
   width: 100%;
   padding-top: 5px;

@@ -1,12 +1,8 @@
 import React from 'react';
-import Footer from './Footer';
-import Header from './Header';
 
 function About() {
     return (
         <div className="about">
-
-            <Header />
 
             <div className="container">
                 <div className="box">
@@ -28,9 +24,6 @@ function About() {
                     </div>
                 </div>
             </div>
-
-            <Footer />
-
         </div>
     )
 }

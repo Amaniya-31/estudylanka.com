@@ -1,7 +1,5 @@
 import React from 'react';
-import { Navbar, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import Logo from '../logo.png';
+import { Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,22 +7,7 @@ const exc = <FontAwesomeIcon icon={faExclamationCircle} />
 
 function PastPaper() {
     return (
-        <div>            
-            <Container>
-                <Navbar collapseOnSelect expand="lg">
-                    <Link to="/" title="estudylanka"><Navbar.Brand className="brand brandTxt">
-                        <img
-                            alt="logo"
-                            src={Logo}
-                            width="100"
-                            height="100"
-                            className="d-inline-block align-top brand-img"
-                        />
-                        eStudyLanka
-                    </Navbar.Brand></Link>
-                </Navbar>
-            </Container>
-
+        <div> 
             <Container fluid>
                 <div className="schlBg" title="pastpapers">
                     <h1> {exc} Under development</h1>

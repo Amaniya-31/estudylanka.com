@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Navbar, Card, CardGroup } from 'react-bootstrap';
-import Footer from './Footer';
 import PageNumbers from './PageNumbers';
 import { Link } from 'react-router-dom';
 import Logo from '../logo.png';
@@ -119,8 +118,6 @@ function Ads3() {
             </Container>
 
             <PageNumbers />
-
-            <Footer />
         </div>
     )
 }

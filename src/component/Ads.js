@@ -1,30 +1,12 @@
 import React from 'react';
-import { Container, Card, CardGroup, Navbar } from 'react-bootstrap';
-import Footer from './Footer';
+import { Card, CardGroup } from 'react-bootstrap';
 import PageNumbers from './PageNumbers';
-import { Link } from 'react-router-dom';
-import Logo from '../logo.png';
 
 function Ads() {
     return (
         <div>
-            <Container>
-                <Navbar collapseOnSelect expand="lg">
-                    <Link to="/" title="estudylanka"><Navbar.Brand className="brand brandTxt">
-                        <img
-                            alt="logo"
-                            src={Logo}
-                            width="100"
-                            height="100"
-                            className="d-inline-block align-top brand-img"
-                        />
-                        eStudyLanka
-                    </Navbar.Brand></Link>
-                </Navbar>
-            </Container>
-
             <div id="page1">
-                <Container style={{ alignContent: 'center' }}>
+                <div style={{marginTop: '50px'}}>
                     <CardGroup>
                         <Card className="polaroid" style={{ backgroundColor: '#CEE5D0' }}>
                             {/* <Card.Img variant="top" src={Photo} width="250" height="250" className="card-align" style={{ borderRadius: "50%" }} /> */}
@@ -166,12 +148,10 @@ function Ads() {
                             </Card.Body>
                         </Card>
                     </CardGroup>
-                </Container>
+                </div>
             </div>
 
             <PageNumbers />
-
-            <Footer />
         </div>
     )
 }

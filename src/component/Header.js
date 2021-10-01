@@ -25,10 +25,10 @@ function Header() {
                             <Nav className="ml-auto nav-link">
                                 <Nav.Link href="/" style={{paddingLeft: '15px', paddingRight: '15px'}}>HOME</Nav.Link>
                                 <Nav.Link href="/about" style={{paddingLeft: '15px', paddingRight: '15px'}}>ABOUT</Nav.Link>
-                                <Nav.Link href="/contact-us" style={{paddingLeft: '15px', paddingRight: '15px'}}>CONTACT</Nav.Link>
+                                <Nav.Link href="/#contact-us" style={{paddingLeft: '15px', paddingRight: '15px'}}>CONTACT</Nav.Link>
                                 <Nav.Link href="/tutors" style={{paddingLeft: '15px', paddingRight: '15px'}}>TUTORS</Nav.Link>
                                 <Nav.Link href="/student-forum" style={{paddingLeft: '15px', paddingRight: '15px'}}>STUDENTS</Nav.Link>
-                                <Link to="/post-ad"><Button variant="dark" className="adBtn">POST YOUR AD</Button></Link>
+                                <Link to="/post-ad"><Button className="adBtn">POST YOUR AD</Button></Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
