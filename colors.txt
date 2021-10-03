@@ -1,3 +1,21 @@
+firebase.json =>
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
+
 Card colours =>
 Card #1 = bg( #CEE5D0 )
 		color( #5089C6 )

@@ -21,14 +21,14 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/tutors" component={Ads} />
+          <Route path="/tutors/page1" component={Ads} />
           <Route path="/post-ad" component={PostAd} />
           <Route path="/tutors/page2" component={Ads2} />
           <Route path="/tutors/page3" component={Ads3} />
           <Route path="/internaional-schools" component={Schools} />
           <Route path="/universities" component={Uni} />
           <Route path="/past-papers" component={PastPprs} />
-          <Route path="/student-forum" component={Student} />
+          <Route path="/forum" component={Student} />
           <Route path="/about" component={About} />
         </Switch>
         <Footer />

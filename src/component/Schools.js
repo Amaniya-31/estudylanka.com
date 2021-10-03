@@ -1,14 +1,25 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 
 function Schools() {
     return (
         <div id="schools">
+            {/* <table>
+                <div className="Sec">                    
+                    <tr><td>Amal International School</td></tr>
+                    <tr><td>Al-Manar International School</td></tr>
+                    <tr><td>Asian International School</td></tr>
+                    <tr><td>Bishop's College</td></tr>
+                    <tr><td>British School in Colombo</td></tr>
+                    <tr><td>Colombo International School</td></tr> 
+                    <tr><td>Colombo South International School</td></tr> 
+                    <tr><td>Cresent Schools International</td></tr> 
+                    <tr><td>Elizabeth Moir School</td></tr> 
+                    <tr><td>Galle International School</td></tr> 
+                </div>
+            </table> */}
 
-            <br />
-
-            <Container fluid>
-                <div className="schlBg">
+            <div className="schlBg">
+                <div className="sclList">                    
                     <dl>
                         <dt><a href="https://amaledu.lk/" className="schlLnk">Amal International School</a></dt>
                         <dd className="schlDp">Amal International School is the very first  private community boys’ school in National Curriculum in Colombo South, situated in the heart of the city of Colombo. It welcomes students of all nationalities with more than 1300 students and 110 members of staff.</dd>
@@ -106,8 +117,8 @@ function Schools() {
                         <dd className="schlDp">Wycherley is also known as the Cambridge Centre in Sri Lanka offering the world recognised Cambridge Curriculum from Primary to Secondary education and is endorsed by the University of Cambridge – UK.</dd>
                     </dl>
                 </div>
-            </Container>
-        </div>
+            </div>
+        </div >
     )
 }
 
