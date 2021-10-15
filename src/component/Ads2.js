@@ -9,7 +9,7 @@ function Ads2() {
                 <CardGroup>
                     <Card className="polaroid">
                         <Card.Body className="card-align">
-                            <Card.Title className="crdTitle" style={{ color: '#5089C6' }} title="English language">English LANGUAGE</Card.Title>
+                            <Card.Title className="crdTitle" style={{ color: '#5089C6' }} title="English language">ENGLISH LANGUAGE</Card.Title>
                             <Card.Text className="crdTxt">
                                 <p><strong>TEACHER :</strong> Imthiyas Thaslim</p>
                                 <p><strong>YEARS OF EXPERIENCE :</strong> 23 years</p>
@@ -23,7 +23,7 @@ function Ads2() {
                     </Card>
                     <Card className="polaroid">
                         <Card.Body className="card-align">
-                            <Card.Title className="crdTitle" style={{ color: '#B61919' }} title="engliah language">English LANGUAGE</Card.Title>
+                            <Card.Title className="crdTitle" style={{ color: '#B61919' }} title="english language">ENGLISH LANGUAGE</Card.Title>
                             <Card.Text className="crdTxt">
                                 <p><strong>TEACHER :</strong> Samindi Kusalya</p>
                                 <p><strong>YEARS OF EXPERIENCE :</strong> 03 years</p>
@@ -37,7 +37,7 @@ function Ads2() {
                     </Card>
                     <Card className="polaroid">
                         <Card.Body className="card-align">
-                            <Card.Title className="crdTitle" style={{ color: '#4A47A3' }} title="English literature">English LITERATURE</Card.Title>
+                            <Card.Title className="crdTitle" style={{ color: '#4A47A3' }} title="English literature">ENGLISH LITERATURE</Card.Title>
                             <Card.Text className="crdTxt">
                                 <p><strong>TEACHER :</strong> Samindi Kusalya</p>
                                 <p><strong>YEARS OF EXPERIENCE :</strong> 03 years</p>

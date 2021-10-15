@@ -9,6 +9,20 @@ function Ads3() {
                 <CardGroup>
                     <Card className="polaroid">
                         <Card.Body className="card-align">
+                            <Card.Title className="crdTitle" style={{ color: '#5089C6' }} title="maths">MATHS</Card.Title>
+                            <Card.Text className="crdTxt">
+                                <p><strong>TEACHER :</strong> Cloud LearnX</p>
+                                <p><strong>YEARS OF EXPERIENCE :</strong> 3 years</p>
+                                <p><strong>CONTACT NUMBER :</strong> 0754590747</p>
+                                <p><strong>WHATSAPP :</strong> +94 754590747</p>
+                                <p><strong>SYLLABUS :</strong> Edexcel and Cambridge</p>
+                                <p><strong>GRADE :</strong> Grade 06, Grade 09, Grade 10, Grade 11, Grade 12</p>
+                                <p><strong>MEDIUM :</strong> English</p>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card className="polaroid">
+                        <Card.Body className="card-align">
                             <Card.Title className="crdTitle" style={{ color: '#5089C6' }} title="mathematics">MATHEMATICS</Card.Title>
                             <Card.Text className="crdTxt">
                                 <p><strong>TEACHER :</strong> S Mayuiran</p>
@@ -35,6 +49,8 @@ function Ads3() {
                             </Card.Text>
                         </Card.Body>
                     </Card>
+                </CardGroup>
+                <CardGroup>
                     <Card className="polaroid">
                         <Card.Body className="card-align">
                             <Card.Title className="crdTitle" style={{ color: '#4A47A3' }} title="physics">PHYSICS</Card.Title>
@@ -49,8 +65,6 @@ function Ads3() {
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                </CardGroup>
-                <CardGroup>
                     <Card className="polaroid">
                         <Card.Body className="card-align">
                             <Card.Title className="crdTitle" style={{ color: '#B85C38' }} title="spoken english for adults">SPOKEN ENGLISH FOR ADULTS</Card.Title>
@@ -60,21 +74,6 @@ function Ads3() {
                                 <p><strong>CONTACT NUMBER :</strong> +94 774542901</p>
                                 <p><strong>WHATSAPP :</strong> +94 774542901</p>
                                 <p><strong>MEDIUM :</strong> English</p>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    <Card className="polaroid" style={{ visibility: 'hidden' }}>
-                        {/* <Card.Img variant="top" src={Photo} width="250" height="250" className="card-align" style={{ borderRadius: "50%" }} /> */}
-                        <Card.Body className="card-align">
-                            <Card.Title className="crdTitle" style={{ color: '#4A47A3' }} title="physics">PHYSICS</Card.Title>
-                            <Card.Text className="crdTxt">
-                                <p title="Mohamed Firdous"><strong>TEACHER :</strong> MOHAMED FIRDOUS</p>
-                                <p><strong>YEARS OF EXPERIENCE :</strong> 10 YEARS</p>
-                                <p><strong>CONTACT NUMBER :</strong> +966 553658254</p>
-                                <p><strong>WHATSAPP :</strong> +966 553658254</p>
-                                <p><strong>SYLLABUS :</strong> Edexcel, Cambridge and National(Sri Lankan syllabus)</p>
-                                <p><strong>GRADE :</strong> GRADE 10, GRADE 11, GRADE 12, GRADE 13</p>
-                                <p title="english, sinhala medium"><strong>MEDIUM :</strong> English, Sinhala</p>
                             </Card.Text>
                         </Card.Body>
                     </Card>

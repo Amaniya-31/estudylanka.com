@@ -3,21 +3,6 @@ import React from 'react';
 function Schools() {
     return (
         <div id="schools">
-            {/* <table>
-                <div className="Sec">                    
-                    <tr><td>Amal International School</td></tr>
-                    <tr><td>Al-Manar International School</td></tr>
-                    <tr><td>Asian International School</td></tr>
-                    <tr><td>Bishop's College</td></tr>
-                    <tr><td>British School in Colombo</td></tr>
-                    <tr><td>Colombo International School</td></tr> 
-                    <tr><td>Colombo South International School</td></tr> 
-                    <tr><td>Cresent Schools International</td></tr> 
-                    <tr><td>Elizabeth Moir School</td></tr> 
-                    <tr><td>Galle International School</td></tr> 
-                </div>
-            </table> */}
-
             <div className="schlBg">
                 <div className="sclList">                    
                     <dl>

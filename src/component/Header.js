@@ -26,8 +26,8 @@ function Header() {
                                 <Nav.Link href="/" style={{ paddingLeft: '15px', paddingRight: '15px' }}>HOME</Nav.Link>
                                 <Nav.Link href="/about" style={{ paddingLeft: '15px', paddingRight: '15px' }}>ABOUT</Nav.Link>
                                 <Nav.Link href="/#contact-us" style={{ paddingLeft: '15px', paddingRight: '15px' }}>CONTACT</Nav.Link>
-                                <Nav.Link href="/tutors/page1" style={{ paddingLeft: '15px', paddingRight: '15px' }}>TUTORS</Nav.Link>
-                                <Nav.Link href="/forum" style={{ paddingLeft: '15px', paddingRight: '15px' }}>FORUM</Nav.Link>
+                                <Nav.Link href="/internaional-schools" style={{ paddingLeft: '15px', paddingRight: '15px' }}>INTERNATIONAL SCHOOLS</Nav.Link>
+                                <Nav.Link href="/universities" style={{ paddingLeft: '15px', paddingRight: '15px' }}>UNIVERSITIES</Nav.Link>
                                 <Link to="/post-ad"><Button className="adBtn">POST YOUR AD</Button></Link>
                             </Nav>
                         </Navbar.Collapse>

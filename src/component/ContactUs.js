@@ -22,8 +22,8 @@ function ContactUs() {
     }
 
     return (
-        <div id="contact-us">
-            <Form className="frmBg" onSubmit={sendEmail}>
+        <div>
+            <Form id="contact-us" className="frmBg" onSubmit={sendEmail}>
                 <h3 className="postAdTitle" style={{ textAlign: 'left' }}>Send us your feedback and we will reach out to you</h3>
 
                 <Row>

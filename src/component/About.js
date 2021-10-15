@@ -7,7 +7,7 @@ function About() {
                 <div className="box">
                     <h2 className="text">Our Vission</h2>
                     <div className="pText">
-                        <p>"To be the most student-centric and strive to be the best site for Sri-Lankn students in guiding them
+                        <p>"To be the most student-centric and strive to be the best site for Sri-Lankan students in guiding them
                             for their educational need"</p>
                     </div>
                 </div>
