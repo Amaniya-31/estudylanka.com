@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
 
-const openEnv = <FontAwesomeIcon icon={faEnvelopeOpenText} style={{fontSize: '300px', margin: 'auto', color: '#889EAF', marginBottom: '25px'}} />
+const openEnv = <FontAwesomeIcon icon={faEnvelopeOpenText} style={{ fontSize: '300px', margin: 'auto', color: '#889EAF', marginBottom: '25px' }} />
 
 function ContactUs() {
 
