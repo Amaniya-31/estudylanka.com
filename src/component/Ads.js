@@ -1,144 +1,57 @@
-import React from 'react';
-import { Card, CardGroup } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Card } from 'react-bootstrap';
 import PageNumbers from './PageNumbers';
+import firebase from '../config/eStudyconfig';
 
 function Ads() {
+
+    const [ads, setAds] = useState([]);
+    const [loading, setLoading] = useState(false);
+
+    const adsRef = firebase.firestore().collection("ads").orderBy("subject", "asc");
+
+    function getAds() {
+        setLoading(true);
+        adsRef.onSnapshot((querySnapshot) => {
+            const items = [];
+            querySnapshot.forEach((doc) => {
+                items.push(doc.data());
+            });
+            setAds(items);
+            setLoading(false);
+        });
+    }
+
+    useEffect(() => {
+        getAds();
+    }, []);
+
+    if (loading) {
+        return <h1>Loading...</h1>
+    }
+
     return (
         <div>
             <div id="page1">
                 <div style={{ marginTop: '50px' }}>
-                    <CardGroup>
-                        <Card className="polaroid">
-                            <Card.Body className="card-align">
-                                <Card.Title className="crdTitle" style={{ color: '#5089C6' }} title="accounting">ACCOUNTING</Card.Title>
-                                <Card.Text className="crdTxt">
-                                    <p><strong>TEACHER :</strong> Mohammed</p>
-                                    <p><strong>YEARS OF EXPERIENCE :</strong> 22 years</p>
-                                    <p><strong>CONTACT NUMBER :</strong> +966 533261280</p>
-                                    <p><strong>WHATSAPP :</strong> +966 533261280</p>
-                                    <p><strong>SYLLABUS :</strong> Edexcel and Cambridge</p>
-                                    <p><strong>GRADE :</strong> Grade 09, Grade 10, Grade 11, Grade 12</p>
-                                    <p><strong>MEDIUM :</strong> English</p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card className="polaroid">
-                            <Card.Body>
-                                <Card.Title className="crdTitle" style={{ color: '#B61919' }} title="accounting">ACCOUNTING</Card.Title>
-                                <Card.Text className="crdTxt">
-                                    <p><strong>TEACHER :</strong> Safran Saly</p>
-                                    <p><strong>YEARS OF EXPERIENCE :</strong> 8 years</p>
-                                    <p><strong>CONTACT NUMBER :</strong> +94 719649644</p>
-                                    <p><strong>WHATSAPP :</strong> +94 719649644</p>
-                                    <p><strong>SYLLABUS :</strong> Edexcel and Cambridge</p>
-                                    <p><strong>GRADE :</strong> Grade 09, Grade 10, Grade 11, Grade 12</p>
-                                    <p><strong>MEDIUM :</strong> English</p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card className="polaroid">
-                            <Card.Body>
-                                <Card.Title className="crdTitle" style={{ color: '#4A47A3' }} title="business studies">BUSINESS STUDIES</Card.Title>
-                                <Card.Text className="crdTxt">
-                                    <p><strong>TEACHER :</strong> Zuraida Ansari</p>
-                                    <p><strong>YEARS OF EXPERIENCE :</strong> 18 years</p>
-                                    <p><strong>CONTACT NUMBER :</strong> +94 769112570</p>
-                                    <p><strong>WHATSAPP :</strong> +94 769112570</p>
-                                    <p><strong>SYLLABUS :</strong> Edexcel and Cambridge</p>
-                                    <p><strong>GRADE :</strong> Grade 09, Grade 10</p>
-                                    <p><strong>MEDIUM :</strong> English</p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </CardGroup>
-                    <CardGroup>
-                        <Card className="polaroid">
-                            <Card.Body>
-                                <Card.Title className="crdTitle" style={{ color: '#B85C38' }} title="business studies">BUSINESS STUDIES</Card.Title>
-                                <Card.Text className="crdTxt">
-                                    <p><strong>TEACHER :</strong> Safran Saly</p>
-                                    <p><strong>YEARS OF EXPERIENCE :</strong> 8 years</p>
-                                    <p><strong>CONTACT NUMBER :</strong> +94 719649644</p>
-                                    <p><strong>WHATSAPP :</strong> +94 719649644</p>
-                                    <p><strong>SYLLABUS :</strong> Edexcel and Cambridge</p>
-                                    <p><strong>GRADE :</strong> Grade 09, Grade 10, Grade 11, Grade 12</p>
-                                    <p><strong>MEDIUM :</strong> English</p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card className="polaroid">
-                            <Card.Body>
-                                <Card.Title className="crdTitle" style={{ color: '#30475E' }} title="business studies">BUSINESS STUDIES</Card.Title>
-                                <Card.Text className="crdTxt">
-                                    <p><strong>TEACHER :</strong> Shahbaz Ahmed</p>
-                                    <p><strong>YEARS OF EXPERIENCE :</strong> 10 years</p>
-                                    <p><strong>CONTACT NUMBER :</strong> +94 7735277994</p>
-                                    <p><strong>WHATSAPP :</strong> +94 7735277994</p>
-                                    <p><strong>SYLLABUS :</strong> Edexcel and Cambridge</p>
-                                    <p><strong>GRADE :</strong> Grade 09, Grade 10, Grade 11, Grade 12</p>
-                                    <p><strong>MEDIUM :</strong> English</p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card className="polaroid">
-                            <Card.Body>
-                                <Card.Title className="crdTitle" style={{ color: '#911F27' }} title="economics">ECONOMICS</Card.Title>
-                                <Card.Text className="crdTxt">
-                                    <p><strong>TEACHER :</strong> Zuraida Ansari</p>
-                                    <p><strong>YEARS OF EXPERIENCE :</strong> 18 years</p>
-                                    <p><strong>CONTACT NUMBER :</strong> +94 769112570</p>
-                                    <p><strong>WHATSAPP :</strong> +94 769112570</p>
-                                    <p><strong>SYLLABUS :</strong> Edexcel and Cambridge</p>
-                                    <p><strong>GRADE :</strong> Grade 09, Grade 10</p>
-                                    <p><strong>MEDIUM :</strong> English</p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </CardGroup>
-                    <CardGroup>
-                        <Card className="polaroid">
-                            <Card.Body>
-                                <Card.Title className="crdTitle" style={{ color: '#444941' }} title="economics">ECONOMICS</Card.Title>
-                                <Card.Text className="crdTxt">
-                                    <p><strong>TEACHER :</strong> Safran Saly</p>
-                                    <p><strong>YEARS OF EXPERIENCE :</strong> 8 years</p>
-                                    <p><strong>CONTACT NUMBER :</strong> +94 719649644</p>
-                                    <p><strong>WHATSAPP :</strong> +94 719649644</p>
-                                    <p><strong>SYLLABUS :</strong> Edexcel and Cambridge</p>
-                                    <p><strong>GRADE :</strong> Grade 09, Grade 10, Grade 11, Grade 12</p>
-                                    <p><strong>MEDIUM :</strong> English</p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card className="polaroid">
-                            <Card.Body>
-                                <Card.Title className="crdTitle" style={{ color: '#6F4C5B' }} title="economics">ECONOMICS</Card.Title>
-                                <Card.Text className="crdTxt">
-                                    <p><strong>TEACHER :</strong> Shahbaz Ahmed</p>
-                                    <p><strong>YEARS OF EXPERIENCE :</strong> 10 years</p>
-                                    <p><strong>CONTACT NUMBER :</strong> +94 7735277994</p>
-                                    <p><strong>WHATSAPP :</strong> +94 7735277994</p>
-                                    <p><strong>SYLLABUS :</strong> Edexcel and Cambridge</p>
-                                    <p><strong>GRADE :</strong> Grade 09, Grade 10, Grade 11, Grade 12</p>
-                                    <p><strong>MEDIUM :</strong> English</p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card className="polaroid">
-                            <Card.Body className="card-align">
-                                <Card.Title className="crdTitle" style={{ color: '#5F7A61' }}>ENGLISH</Card.Title>
-                                <Card.Text className="crdTxt">
-                                    <p><strong>TEACHER :</strong> Mrs F S Mohideen</p>
-                                    <p><strong>YEARS OF EXPERIENCE :</strong> 06 years</p>
-                                    <p><strong>CONTACT NUMBER :</strong> +94 771391864</p>
-                                    <p><strong>WHATSAPP :</strong> +94 771391864</p>
-                                    <p><strong>SYLLABUS :</strong> Edexcel and Cambridge</p>
-                                    <p><strong>GRADE :</strong> Grade 02</p>
-                                    <p><strong>MEDIUM :</strong> English</p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </CardGroup>
+                    {ads.map((ad) => (
+                        <>
+                            <Card className="polaroid crd-sz" key={ad.id}>
+                                <Card.Body className="card-align">
+                                    <Card.Title className="crdTitle" style={{ color: '#5089C6' }} title="accounting">{ad.subject}</Card.Title>
+                                    <Card.Text className="crdTxt">
+                                        <p><strong>TEACHER :</strong> {ad.nameof}</p>
+                                        <p><strong>YEARS OF EXPERIENCE :</strong> {ad.years} years</p>
+                                        <p><strong>CONTACT NUMBER :</strong> {ad.contact}</p>
+                                        <p><strong>WHATSAPP :</strong> {ad.whatsapp}</p>
+                                        <p><strong>SYLLABUS :</strong> {ad.syllabus}</p>
+                                        <p><strong>GRADE :</strong> {ad.grade}</p>
+                                        <p><strong>MEDIUM :</strong> {ad.medium}</p>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </>
+                    ))}
                 </div>
             </div>
 
