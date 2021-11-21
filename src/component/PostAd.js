@@ -1,21 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
-import firebase, { db } from '../config/eStudyconfig';
+import { db } from '../config/eStudyconfig';
 
 function PostAd(e) {
-
-    function sendEmail(e) {
-        e.preventDefault();
-
-        emailjs.sendForm('service_8fdml82', 'template_f6kgunq', e.target, 'user_O36l6NDGBRWGo4WGjPSmS')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-        e.target.reset();
-    }
 
     const [contact, setContact] = useState("");
     const [email, setEmail] = useState("");
@@ -27,7 +15,19 @@ function PostAd(e) {
     const [whatsapp, setWhatsapp] = useState("");
     const [years, setYears] = useState("");
 
-    const handleSubmit = (e) => {
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_8fdml82', 'template_f6kgunq', e.target, 'user_O36l6NDGBRWGo4WGjPSmS')
+            .then((result) => {
+                alert("Ad has been successfully submitted. Your Ad will be posted within the next 24 hours.")
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        }
+
+    function handleSubmit(e) {
         e.preventDefault();
         db.collection("ads").add({
             contact: contact,
@@ -40,7 +40,7 @@ function PostAd(e) {
             whatsapp: whatsapp,
             years: years
         }).then(() => {
-            alert("Ad has been successfully posted.")
+            alert("Ad has been successfully posted.");
         }).catch((error) => {
             console.log(error.text);
         });
@@ -57,7 +57,7 @@ function PostAd(e) {
 
     return (
         <div id="contact">
-            <Form action="post.php" method="post" className="frmBg" onSubmit={sendEmail}>
+            <Form method="post" className="frmBg" onSubmit={sendEmail}>
                 <h3 className="postAdTitle">Submit your details to place your Ad here</h3>
                 <h6 style={{ paddingBottom: '50px' }}>Please submit one subject at a time. You may post multiple Ads.</h6>
                 <Row>
@@ -370,7 +370,7 @@ function PostAd(e) {
                         </Form.Group>
                     </Col>
                 </Row>
-                <Button variant="primary" type="submit" onClick={handleSubmit}>
+                <Button variant="primary" type="submit">
                     Submit
                 </Button>
             </Form>

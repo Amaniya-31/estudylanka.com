@@ -42,7 +42,7 @@ Card #8 = bg( F5E8C7 )
 		color( 6F4C5B )
 
 Card #9 = bg( F0F0CB )
-		color( 5F7A61 )
+		color(   )
 
 <!--?xml version="1.0" encoding="UTF-8"?-->
 <resources>

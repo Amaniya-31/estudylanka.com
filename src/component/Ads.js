@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { Card } from 'react-bootstrap';
-import PageNumbers from './PageNumbers';
 import firebase from '../config/eStudyconfig';
 
 function Ads() {
 
+    const titleColour = [{ color: '#5089C6' }, { color: '#B61919' }, { color: '#4A47A3' }, { color: '#B85C38' }, { color: '#30475E' }, { color: '#911F2' }, { color: '#444941' }, { color: '#6F4C5B' }, { color: '#5F7A61' }];
+    var selectedCol = titleColour[Math.floor(Math.random() * titleColour.length)];
+    console.log(selectedCol);
+
     const [ads, setAds] = useState([]);
     const [loading, setLoading] = useState(false);
 
-    const adsRef = firebase.firestore().collection("ads").orderBy("subject", "asc");
+    const adsRefStart = firebase.firestore().collection("ads").orderBy("subject", "asc");
 
     function getAds() {
         setLoading(true);
-        adsRef.onSnapshot((querySnapshot) => {
+        adsRefStart.onSnapshot((querySnapshot) => {
             const items = [];
             querySnapshot.forEach((doc) => {
                 items.push(doc.data());
@@ -36,9 +39,9 @@ function Ads() {
                 <div style={{ marginTop: '50px' }}>
                     {ads.map((ad) => (
                         <>
-                            <Card className="polaroid crd-sz" key={ad.id}>
+                            <Card className="polaroid" key={ad.id}>
                                 <Card.Body className="card-align">
-                                    <Card.Title className="crdTitle" style={{ color: '#5089C6' }} title="accounting">{ad.subject}</Card.Title>
+                                    <Card.Title className="crdTitle" style={selectedCol} title="accounting">{ad.subject}</Card.Title>
                                     <Card.Text className="crdTxt">
                                         <p><strong>TEACHER :</strong> {ad.nameof}</p>
                                         <p><strong>YEARS OF EXPERIENCE :</strong> {ad.years} years</p>
@@ -54,8 +57,6 @@ function Ads() {
                     ))}
                 </div>
             </div>
-
-            <PageNumbers />
         </div>
     )
 }

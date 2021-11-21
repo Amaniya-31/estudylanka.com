@@ -18,7 +18,7 @@ function Footer() {
                 <p className="ftrPs" title="estudylanka">{whatsapp} WhatsApp : +94 769407802 </p>
                 <p className="ftrPs" title="estudylanka">{fb} Facebook : EStudyLanka </p>
                 <hr className="divdi"></hr>
-                <p className="ftrP" title="F. Amaniya">{copy} 2021 All Rights Reserved - BitWeb Solutions</p>
+                <p className="ftrP">{copy} 2021 All Rights Reserved - <a target="_blank" href="https://bitwebsol.web.app" >BitWeb Solutions</a></p>
             </div>
         </div>
     )
