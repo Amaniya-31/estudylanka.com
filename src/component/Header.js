@@ -6,15 +6,15 @@ import { Button, Container, Navbar, Nav } from 'react-bootstrap';
 function Header() {
     return (
         <div>
-            <div className="navTabs">
-                <Navbar collapseOnSelect expand="lg" variant="dark">
+            <div>
+                <Navbar className='shadow' collapseOnSelect expand="lg" bg='light' variant="light">
                     <Container fluid>
                         <Link to="/" title="estudylanka"><Navbar.Brand className="brand">
                             <img
                                 alt="logo"
                                 src={Logo}
-                                width="50"
-                                height="50"
+                                width="40"
+                                height="40"
                                 className="d-inline-block align-top brand-img"
                                 style={{ paddingRight: '5px' }}
                             />
@@ -22,12 +22,13 @@ function Header() {
                         </Navbar.Brand></Link>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="ml-auto nav-link">
+                            <Nav className="m-auto nav-link">
                                 <Nav.Link href="/" style={{ paddingLeft: '15px', paddingRight: '15px' }}>HOME</Nav.Link>
                                 <Nav.Link href="/about" style={{ paddingLeft: '15px', paddingRight: '15px' }}>ABOUT</Nav.Link>
+                                <Nav.Link href="/#tutors" style={{ paddingLeft: '15px', paddingRight: '15px' }}>TUTORS</Nav.Link>
                                 <Nav.Link href="/#contact-us" style={{ paddingLeft: '15px', paddingRight: '15px' }}>CONTACT</Nav.Link>
-                                <Nav.Link href="/internaional-schools" style={{ paddingLeft: '15px', paddingRight: '15px' }}>INTERNATIONAL SCHOOLS</Nav.Link>
-                                <Nav.Link href="/universities" style={{ paddingLeft: '15px', paddingRight: '15px' }}>UNIVERSITIES</Nav.Link>
+                            </Nav>
+                            <Nav>
                                 <Link to="/post-ad"><Button className="adBtn">POST YOUR AD</Button></Link>
                             </Nav>
                         </Navbar.Collapse>

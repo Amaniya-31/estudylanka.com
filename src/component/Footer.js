@@ -14,11 +14,11 @@ function Footer() {
         <div>
             <div className="ftrBg">
                 <h4 className="ftrPs">Contact Us</h4>
-                <p className="ftrPs" title="estudylanka">{email} Email : estudylanka@gmail.com </p>
-                <p className="ftrPs" title="estudylanka">{whatsapp} WhatsApp : +94 769407802 </p>
-                <p className="ftrPs" title="estudylanka">{fb} Facebook : EStudyLanka </p>
+                <p className="ftrPs">{email} Email : estudylanka@gmail.com </p>
+                <p className="ftrPs">{whatsapp} WhatsApp : +94 769407802 </p>
+                <p className="ftrPs">{fb} Facebook : EStudyLanka </p>
                 <hr className="divdi"></hr>
-                <p className="ftrP">{copy} 2021 All Rights Reserved - <a target="_blank" href="https://bitwebsol.web.app" >BitWeb Solutions</a></p>
+                <p className="ftrP">{copy} 2021 All Rights Reserved - <a href="https://bitwebsol.web.app" >BitWeb Solutions</a></p>
             </div>
         </div>
     )

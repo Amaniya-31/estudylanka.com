@@ -1,40 +1,60 @@
-import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserFriends, faBookmark, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
+import { Carousel, Container } from 'react-bootstrap';
 import ContactUs from './ContactUs';
-
-const tutors = <FontAwesomeIcon icon={faUserFriends} style={{ color: '#ffd900', marginRight: '10px' }} />
-const forums = <FontAwesomeIcon icon={faBookmark} style={{ color: '#ffd900', marginRight: '10px' }} />
-const pastpapers = <FontAwesomeIcon icon={faFileAlt} style={{ color: '#ffd900', marginRight: '10px' }} />
+import Student from '../images/student.png';
+import Ad from '../images/ad.jpg';
+import Ads from './Ads';
 
 function Landing() {
-
-    const [readMore, setReadMore] = useState(false);
-
-    const extraContent = <h2 style={{ fontSize: '22px', marginTop: '10px' }}>Find qualified and experienced tutors at eStudyLanka to guide you.</h2>
-
-    const linkName = readMore ? 'READ LESS' : 'READ MORE'
-
     return (
         <div>
-            <div className="page">
-                <h2>Striving to be a guide for school <br /> children and teachers</h2>
-                {readMore && extraContent}<Button className="btn2" type="button" onClick={() => { setReadMore(!readMore) }}><strong>{linkName}</strong></Button>
-            </div>
-            
-            <div className="listcontain">
-                <div className="listbox">
-                    <p className="listp"><Link to="/tutors/page1" className="listp">{tutors} Tutors</Link></p>
-                </div>
-                <div className="listbox">
-                    <p className="listp"><Link to="/forum" className="listp">{forums} Forum</Link></p>
-                </div>
-                <div className="listbox">
-                    <p className="listp"><Link to="/past-papers" className="listp">{pastpapers}Past Papers</Link></p>
-                </div>
-            </div>
+            <Carousel fade variant='dark' className='slide' indicators={false} controls={true}>
+                <Carousel.Item interval={3000} style={{ backgroundColor: '#557C55', height: '400px' }}>
+                    <Container>
+                        <div>
+                            <div className='box-shadow' style={{ backgroundColor: '#F0ECE3', height: '150px', width: '500px', zIndex: '100', position: 'absolute', marginLeft: '100px', marginTop: '25px' }}>
+                                <div className='in-box-text'>
+                                    <h3>Find the best tutors!</h3>
+                                    <p>Here at eStudyLanka you can find the best tutors who will guide you in your academics.</p>
+                                </div>
+                            </div>
+                            <div style={{ width: '350px', margin: '60px 50px 0px 30px', float: 'right' }}>
+                                <img
+                                    className="d-block w-100"
+                                    src={Student}
+                                    height='400px'
+                                    alt=""
+                                    style={{ zIndex: '500', position: 'relative', marginLeft: '50px' }}
+                                />
+                            </div>
+                        </div>
+                    </Container>
+                </Carousel.Item>
+                <Carousel.Item interval={3000} style={{ backgroundColor: '#B8405E', height: '400px' }}>
+                    <Container>
+                        <div>
+                            <div className='box-shadow' style={{ backgroundColor: '#E2DEA9', height: '180px', width: '500px', zIndex: '100', position: 'absolute', marginLeft: '150px', marginTop: '100px' }}>
+                                <div className='in-box-text'>
+                                    <h3>Get Your Custom Ads!</h3>
+                                    <p><strong>Submit your request for a custom made advertisement and our team will design a custom advertisement for you!</strong></p>
+                                </div>
+                            </div>
+                            <div style={{ width: '350px', margin: '50px 200px 0px 30px', float: 'right' }}>
+                                <img
+                                    className="d-block w-100"
+                                    src={Ad}
+                                    height='400px'
+                                    alt=""
+                                    style={{ zIndex: '500', position: 'relative', marginLeft: '50px' }}
+                                />
+                            </div>
+                        </div>
+                    </Container>
+                </Carousel.Item>
+            </Carousel>
+
+            <Ads />
+
             <ContactUs />
         </div>
     )
